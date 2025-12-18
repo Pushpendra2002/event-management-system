@@ -11,7 +11,7 @@ function Events() {
 
   const fetchEvents = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/events");
+      const res = await axios.get("http://event-management-system-dwdt.onrender.com");
       setEvents(res.data);
     } catch (error) {
       alert("Failed to fetch events");
